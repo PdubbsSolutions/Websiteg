@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register - Document Management</title>
+    <link rel="stylesheet" href="/css/register.css">
+</head>
+<body>
+    <header>
+        <h1 id="register">Register</h1>
+    </header>
+    <section>
+        <% if (errors && errors.length > 0){ %>
+            <ul>
+                <% errors.forEach(error => { %> 
+                    <li style="color:red,"><%= error.msg %></li>
+                <% }) %>
+            </ul>
+        <% } %>
+        <form action="/register" method="POST">
+            <input type="text" name="username" placeholder="Username" value="<%= typeof username !== 'undefined' ? username: ''%>" required>
+            <input type="email" name="email" placeholder="Email" value="<% typeof email !== 'undefined' ? email: ''%>" required>
+            <input type="phoneNumber" name="phoneNumber" placeholder="Phone Number" value="<% typeof phoneNumber !== 'undefined'? phoneNumber: ''%>" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <input type="password2" name="password2" placeholder="Confirm Password" required>
+            <p>By clicking Register, you agree to create an account with PDubbs Solutions.</p>
+            <button id="registerButton" "type="submit">Register</button>
+<div>
+    <input type="checkbox" id="contactConsent" name="contactConsent">
+    <label for="contactConsent">I ${name}, agree to be contacted by PDubbs Solutions using the email address and/or phone number provided.</label>
+  </div>
+    </section>

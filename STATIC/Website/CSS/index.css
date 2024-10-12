@@ -1,0 +1,17 @@
+#pdubbstitle{
+    text-align: center;
+}
+.nunitofont {
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: '200-1000';
+    font-style: normal;
+  }
+.nav{
+    list-style:none;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}

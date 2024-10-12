@@ -1,0 +1,13 @@
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+<meta name="google-signin_client_id"
+content="29300113698-hk8hrlekt1si803jpolf3phms3n91qm2.apps.googleusercontent.com">
+<div class="g-signin2" data-onsuccess="onSignIn"></div>
+<script>
+    function onSignIn(googleUser) {
+        const profile = googleUser.getBasicProfile();
+        console.log('ID: ' + profile.getID());
+        console.log('Name: '+ profile.getName());
+        console.log('Phone_Number: ' + profile.getPhoneNumber());
+        console.log('Email: '+ profile.getEmail());
+    }
+</script>

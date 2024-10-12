@@ -1,0 +1,21 @@
+\\ Create Facebook App + configure OAuth Settings - get App ID
+<script async defer crossorigin="anonymous"
+src="https://connect.facebook.net/en_US/sdk.js"></script>
+<script>
+    window.fbAsyncInit = function() {
+        FB.init({
+            appID   :'ADD_APP_ID',
+            cookie  : true,
+            xfbml   :true,
+            version :'V12.0'
+        });
+        FB.AppEvents.logPageView();
+    };
+function checkLoginState() {
+    FB.getLoginStatus(function(response){
+        statusChangeCallack(response);
+    });
+}
+</script>
+<fb:login-button scope="public-profile,email"
+onlogin="checkLoginState();"></fb:login-button>

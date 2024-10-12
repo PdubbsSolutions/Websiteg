@@ -1,0 +1,9 @@
+{
+    "liveServer.settings.host": "35.209.241.204",
+    "remote.localPortHost": "localhost",
+    "workbench.externalUriOpeners": {
+        "pdubbssolutions": "simpleBrowser.open"
+    },
+    "remote.autoForwardPortsFallback": 22,
+    "remote.autoForwardPorts": true
+}

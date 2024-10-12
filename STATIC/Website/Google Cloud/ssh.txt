@@ -1,0 +1,84 @@
+{
+          value pdubbssolutionsecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBGvirqxqQaJ+Np3FFYFSP0av1v1qidKnSjH5HYd6GzmOvmskMuGcg0fNPgHHmQ1LLKY24nBRJzalzzaTE= google-ssh {userNamepdubbssolutions@gmail.com,expireOn2024-10-12T003943+0000}npdubbssolutionsssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDVG7PRaqQAc6anQVa6MZY8PFXJu9xnDdN8w+z1Yf50OeOZJvTBJ8hM9BKDVttyA0z+G8pvraMw2tKhkEINFxE410JGcVNEFnmxQnzWleck06+BKFvoH4IIPoA2kkicCtdeftzzrKnIxORqiw7XGOGpSR2WD8H1zHJJ2dxV4gv63c0aLyyfb5AcCR8EoYLYHdb+h4V1GcX06eT9ub9j5W2bMqOi89QT8+kMiiZCLU8wQEPhzOtaa7y4thhmX9kiAe0uXmT9QTgQ3yNGGuZKGkrCJ9oDJ9gMJ58tj3Z+61zktaSTaj7x6KvqaoHJ8Pc5dJ13mD6v7xvGrtu+ql google-ssh {userNamepdubbssolutions@gmail.com,expireOn2024-10-12T003946+0000}
+ },
+    "name": "pdubbs-solutions",
+    "networkInterfaces": [
+      {
+        "stackType": "IPV4_ONLY",
+        "name": "nic0",
+        "network": "projects/pdubbs-solutions/global/networks/default",
+        "accessConfigs": [
+          {
+            "name": "External NAT",
+            "type": "ONE_TO_ONE_NAT",
+            "natIP": "34.67.81.210",
+            "kind": "compute#accessConfig",
+            "networkTier": "PREMIUM"
+          }
+        ],
+        "subnetwork": "projects/pdubbs-solutions/regions/us-central1/subnetworks/default",
+        "networkIP": "10.128.0.2",
+        "fingerprint": "IyxzRYxOWfg=",
+        "kind": "compute#networkInterface"
+      }
+    ],
+    "reservationAffinity": {
+      "consumeReservationType": "ANY_RESERVATION"
+    },
+    "resourceStatus": {
+      "scheduling": {}
+    },
+    "satisfiesPzi": true,
+    "scheduling": {
+      "onHostMaintenance": "MIGRATE",
+      "provisioningModel": "STANDARD",
+      "automaticRestart": true,
+      "preemptible": false
+    },
+    "selfLink": "projects/pdubbs-solutions/zones/us-central1-c/instances/pdubbs-solutions",
+    "serviceAccounts": [
+      {
+        "email": "29300113698-compute@developer.gserviceaccount.com",
+        "scopes": [
+          "https://www.googleapis.com/auth/devstorage.read_only",
+          "https://www.googleapis.com/auth/logging.write",
+          "https://www.googleapis.com/auth/monitoring.write",
+          "https://www.googleapis.com/auth/service.management.readonly",
+          "https://www.googleapis.com/auth/servicecontrol",
+          "https://www.googleapis.com/auth/trace.append"
+        ]
+      }
+    ],
+    "shieldedInstanceConfig": {
+      "enableSecureBoot": false,
+      "enableVtpm": true,
+      "enableIntegrityMonitoring": true
+    },
+    "shieldedInstanceIntegrityPolicy": {
+      "updateAutoLearnPolicy": true
+    },
+    "shieldedVmConfig": {
+      "enableSecureBoot": false,
+      "enableVtpm": true,
+      "enableIntegrityMonitoring": true
+    },
+    "shieldedVmIntegrityPolicy": {
+      "updateAutoLearnPolicy": true
+    },
+    "startRestricted": false,
+    "status": "RUNNING",
+    "tags": {
+      "items": [
+        "http-server",
+        "https-server",
+        "lb-health-check"
+      ],
+      "fingerprint": "XTN9W2dqKHc="
+    },
+    "zone": "projects/pdubbs-solutions/zones/us-central1-c"
+  
+
+  ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQC3wS0VEZfIIajqgj3gckEBgxjmDyU/V4++83j6JhD+RYEKboJob+llZsJGLN0zu0L6q4I9cqSsebdRxm/Cyjxyi9abTq2gSyUmxZ4tCXsvTm3UXbmlZ5X89tf6vMhjrisUW5bbDceYfU1TsVO7nG4AVRR0spSmbOrUOGpDqtdalBMzmqW0yt0iiGP4FawgvzCPxVHyDf3mG7GMMO51NFNnu1ZCS375EYsTa9GI3c+nHyZjNlaBxo2e2457tynha/f0Vy/lhLWHdaeZqZn73Y4zsEr0yyaOCZkuvDrLcdnkkBrff3GHbnNtXBTQMLpSbuvciVFaJ2BsoT4O3bx4DAU1McG/+AKE/tHygsY/gMJ3QlSRfLI0MQZHCKq+txXVWhwyb/lRdsxdoH45xX0Rz8FZKDmhb8rOjUr1UOXQgAStcuOx6aVmzPY99R2lY8erewLTwW8KdZ2fgzHPAGJUnbf4WOQbFStduIFlzfwO1KHrXcmVF6vGtgReYLVkwQ1K4vE= pdubbssolutions@cs-849353685217-default
+
+  Meta
+  POST https://us-central1-aiplatform.googleapis.com/v1/projects/pdubbssolutions/locations/us-central1/metadataStores?metadata_store_id=default

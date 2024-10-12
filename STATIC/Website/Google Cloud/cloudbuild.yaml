@@ -1,0 +1,27 @@
+steps:
+- name: alpine
+  args:
+    - sh
+    - -exc
+    - |
+      apk update
+      apk add bind-tools
+      dig @resolver1.opendns.com myip.opendns.com
+options:
+  pool:
+    name: 'projects/pdubbs-solutions/locations/us-central1/workerPools/private-pool-with-nat'
+    name2: 
+
+$ curl -X POST  \
+>  -H "Authorization: Bearer $(gcloud auth print-access-token)"  \
+>  -H "Content-Type: application/json; charset=utf-8"  \
+>  "https://us-central1-aiplatform.googleapis.com/v1/projects/pdubbs-solutions/locations/us-central1/metadataStores?metadata_store_id=default"
+
+  "name": "projects/29300113698/locations/us-central1/metadataStores/default/operations/3391811574313254912",
+  "metadata": {
+    "@type": "type.googleapis.com/google.cloud.aiplatform.v1.CreateMetadataStoreOperationMetadata",
+    "genericMetadata": {
+      "createTime": "2024-10-12T01:32:27.612322Z",
+      "updateTime": "2024-10-12T01:32:27.612322Z"
+    }
+  }
