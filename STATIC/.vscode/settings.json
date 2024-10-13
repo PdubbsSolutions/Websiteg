@@ -1,5 +1,5 @@
 {
-    "liveServer.settings.host": "35.209.241.204",
+    "liveServer.settings.host": "locoalhost",
     "remote.localPortHost": "localhost",
     "workbench.externalUriOpeners": {
         "pdubbssolutions": "simpleBrowser.open"
