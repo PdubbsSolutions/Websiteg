@@ -3,7 +3,8 @@
     "remote.localPortHost": 80,
     "workbench.externalUriOpeners": {
         "scheme": "http",
-        "command": "pdubbssolutions.openUri"
+        "command": "pdubbssolutions.openUri",
+        "priority": "preferred"
     },
     "remote.autoForwardPortsFallback": 22,
     "remote.autoForwardPorts": true
