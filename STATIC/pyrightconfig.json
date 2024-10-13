@@ -6,14 +6,10 @@
     "exclude": [
       "node_modules",
       "build",
-      "dist",
-      "src/subdirectory_to_exclude",
-      "**/migrations"
+      "dist"
     ],
-    "strict": true,
-    "venvPath": "./.venvs",
-    "venv": "my-venv",
-    "pythonVersion": "3.11"
-  }
-
-  
+    "strict": "true",
+    "venvPath": "./.venv",   // Ensure this path exists and points to your virtual environments folder.
+    "pythonVersion": "3.11",  // Version is a string, this should be correct.
+    "venv": ".venv"         // Ensure this is a string pointing to the correct virtual environment.
+  }  
