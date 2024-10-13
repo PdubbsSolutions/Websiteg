@@ -1,0 +1,19 @@
+{
+    "include": [
+      "src",
+      "tests"
+    ],
+    "exclude": [
+      "node_modules",
+      "build",
+      "dist",
+      "src/subdirectory_to_exclude",
+      "**/migrations"
+    ],
+    "strict": true,
+    "venvPath": "./.venvs",
+    "venv": "my-venv",
+    "pythonVersion": "3.11"
+  }
+
+  
