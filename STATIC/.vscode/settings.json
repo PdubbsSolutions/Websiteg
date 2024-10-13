@@ -1,5 +1,5 @@
 {
-    "liveServer.settings.host": "10.128.0.2",
+    "liveServer.settings.host": "127.0.0.1",
     "remote.localPortHost": "allInterfaces",
     "workbench.externalUriOpeners": {
         "scheme": "http",
