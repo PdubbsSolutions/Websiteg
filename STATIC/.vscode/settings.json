@@ -1,4 +1,9 @@
 {
+    {
+        "liveServer.settings.CustomBrowser": "chrome", // or "firefox", depending on your default browser
+        "liveServer.settings.AdvanceCustomBrowserCmdLine": "http://pdubbssolutions.com"
+    }
+    
     "liveServer.settings.host": "127.0.0.1",
     "remote.localPortHost": "allInterfaces",
     "workbench.externalUriOpeners": {
