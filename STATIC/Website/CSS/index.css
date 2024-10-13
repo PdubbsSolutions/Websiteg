@@ -23,3 +23,31 @@ html, body{ height:100%; font-family: "Nunito", sans-serif;}
     height:auto;
     margin-top: 10%;
 }
+.top-nav{
+    position: absolute;
+    top: 20px;
+    right:20px;
+    font-weight: bold;
+    color: #aaafb2
+}
+.top-nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #a8738a
+}
+.footer{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 0.9em;
+}
+@media (min-width :768px){
+    .footer{display:block;}
+}
+@media (max-width: 767px){.footer{display:none;}}
+.logo-container {
+    transition: transform 1s ease;
+}
+body.clicked .logo-container {
+    transform: translateY(-100%);
+}

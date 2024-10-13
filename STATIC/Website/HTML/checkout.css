@@ -1,0 +1,51 @@
+.checkout-container{
+    width:80%;
+    margin:0 auto;
+    padding: 20px;
+}
+h1{
+    text-align:center;
+}
+.cart-summary ul{
+    list-style:none;
+    padding:0;
+}
+.cart-summary li{
+    padding: 10px;
+    border-bottom: 1px solid #94a1a3;
+}
+form {
+    margin-top: 20px;
+}
+label{
+    display:block;
+    margin-top: 10px;
+}
+input[type="text"] ,input[type="email"]{
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #94a1a3;
+    border-radius:5px;
+}
+button{
+    background-color: #a8738a;
+    color: #e1ebe4;
+    font-weight:bold;
+    border: none;
+    padding: 10px;
+    cursor:pointer;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    width: 100%;
+}
+.recaptcha{
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #aaa6b2;
+    border-radius: 5px;
+    text-align: center;
+}
+button:hover{
+    background-color:#a8738a;
+}

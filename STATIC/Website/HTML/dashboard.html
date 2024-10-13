@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>PDubbs Soultions | Dashboard</title>
+    <link rel="stylesheet" type="text/css" name="dashboard" href="dashboard.css">
+</head>
+<body>
+    <header>
+        <img src="Pdubbs Logo.png" alt="Logo" class="logo" onclick="goHome()">
+    </header>
+    <div class="dashboard-container">
+        <div class="main-icons">
+            <div class="icon" id="templates" onclick="goToPage('templates.html')">Templates</div>
+            <div class="icon" id="projects" onclick="goToPage('projects.html')">Projects</div>
+            <div class="icon" id="reports" onclick="goToPage('reports.html')"></div>
+            <div class="stacked-icons">
+                <div class="small-icon" id="email">Email</div>
+                <div class="small-icon" id="bundles">Bundles</div>
+            </div>
+        </div>
+     </div>   
+        <footer>
+            <div class="auth-buttons"><a href="login.html">Login</a> | <a href="register.html">Register</a></div>
+        </footer>
+    <script src="Website\JAVA\dashboard.js"></script>
+</body>
+</html>

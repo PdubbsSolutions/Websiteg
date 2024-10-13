@@ -1,0 +1,16 @@
+.template-container{
+    padding: 20px;
+}
+.template-item{
+    border: 1px solid #784445;
+    padding:10px;
+    margin-bottom: 15px;
+}
+#bundlebutton {
+    background-color:#94a1a3;
+    color: #e1ebe4;
+    border:none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 1em;
+}

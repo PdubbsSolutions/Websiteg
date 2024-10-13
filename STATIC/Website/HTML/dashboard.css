@@ -1,0 +1,39 @@
+.dashboard-container {
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80vh;
+}
+.main-icons {
+    display:flex;
+    justify-content: space-between;
+    width: 50%;
+}
+.icon{
+    width: 150px;
+    height: 150px;
+    background-color: #e1ebe4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.icon:hover{
+    background-color: #acb6af; 
+    transform:scale(1.1);
+}
+.stacked-icons{
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
+}
+.small-icon{
+    font-size: 0.9em;
+    cursor: pointer;
+}
+.small-icon:hover{
+    background-color: #acb6af;
+}
