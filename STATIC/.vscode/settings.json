@@ -1,6 +1,6 @@
 {
     "liveServer.settings.host": "10.128.0.2",
-    "remote.localPortHost": 80,
+    "remote.localPortHost": "allInterfaces",
     "workbench.externalUriOpeners": {
         "scheme": "http",
         "command": "pdubbssolutions.openUri",
