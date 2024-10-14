@@ -1,12 +1,4 @@
-document.getElementById('checkoutForm').addEventListener('submit', function(e){
-    e.preventDefaul();
-    if (document.getElementById('recaptcha').checked){
-        alert('Purchase complete! A confirmation email will be sent to you.');
-        window.location.href="confirmation.html";
-    } else {
-        alert('Please confirm you are not a Robot');
-    }
-});
+
 // Assuming you have a structure for your cart items and display areas
 const cartItemsElement = document.getElementById('cartItems'); // Reference to the cart items container
 const totalDisplay = document.createElement('p'); // Create a paragraph to display total

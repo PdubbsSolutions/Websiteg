@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>PDubbs Soultions | Dashboard</title>
     <link rel="stylesheet" type="text/css" name="checkout" href="checkout.css">
+    <script src="https://www.google.com/recaptcha/enterprise.js?render=6Ld7810qAAAAAKab62SKEisZ0KwLOvFJo-Vg0MFV"></script>
 </head>
 <body>
     <header>
@@ -39,5 +40,13 @@
         </form>
     </div>
 <script src="checkout.js"></script>
+<script>
+    function onClick(e) {
+      e.preventDefault();
+      grecaptcha.enterprise.ready(async () => {
+        const token = await grecaptcha.enterprise.execute('6Ld7810qAAAAAKab62SKEisZ0KwLOvFJo-Vg0MFV', {action: 'LOGIN'});
+      });
+    }
+  </script>
 </body>
 </html>

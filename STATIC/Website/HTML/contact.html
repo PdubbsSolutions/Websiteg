@@ -1,4 +1,15 @@
+<script src="https://www.google.com/recaptcha/enterprise.js?render=6Ld7810qAAAAAKab62SKEisZ0KwLOvFJo-Vg0MFV"></script>
 <link rel="stylesheet" type="text/css" name="contact" href="/Website/CSS/contact.css">
 <form id="contactForm" method="POST" action="/submit-form">
     <!-- form fields -->
 </form>
+<script>
+    function onClick(e) {
+      e.preventDefault();
+      grecaptcha.enterprise.ready(async () => {
+        const token = await grecaptcha.enterprise.execute('6Ld7810qAAAAAKab62SKEisZ0KwLOvFJo-Vg0MFV', {action: 'LOGIN'});
+      });
+    }
+  </script>
+  </body>
+  </html>

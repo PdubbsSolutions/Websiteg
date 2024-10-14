@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">   
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .projects-icon{
+            display:grid;
+            grid-template-columns: repeat(3, 30px);
+            grid-template-rows: repeat(3, 30px);
+            gap: 10px;
+        }
+        .project-block{
+            width: 30px;
+            height: 30px;
+            background-color: #94a1a3;
+            border:2px solid #a8738a;
+            border-radius: 4px;
+        }
+        .project-block.highlight{
+            background-color: #a8738a;
+            border: 2px solid #94a1a3;
+        }
+    </style>
+</head>
+<body>
+    <div class="projects-icon">
+        <div class="project-block"></div>
+        <div class="project-block"></div>
+        <div class="project-block highlight"></div>
+        <div class="project-block"></div>
+        <div class="project-block"></div>
+        <div class="project-block"></div>
+        <div class="project-block highlight"></div>
+        <div class="project-block"></div>
+    </div>
+</body>
+</html>

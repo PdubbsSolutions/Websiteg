@@ -6,7 +6,7 @@
       "request": "launch",
       "name": "Launch pdubbssolutions.com",
       "url": "http://pdubbssolutions.com",
-      "webRoot": "${workspaceFolder}"
+      "webRoot": "${G:\My Drive\PDubbs Solutions\Marketing\Website\STATIC}"
     }
   ]
 }

@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>Protected Payment</title>
+        <script src="https://www.google.com/recaptcha/enterprise.js" async defer></script>
+        <script>
+        function submitForm(){
+            grecaptcha.enterprise.ready(function(){
+                grecaptcha.enterprise.execute(
+                    'reCAPTCHA_site_key', {action: 'purchase'}).then(function(token){
+                    document.getElementById("token").value = token;
+                    document.getElementByID("paymentForm").submit();
+                    });
+            });
+        }
+        </script>
+    </head>
+    <body>
+        <form id="PaymentForm" action="?" method="POST">
+            Total: $50
+            Credit Card Number: <input name="cc-number" id="cc-number" autocomplete="cc-number"></br>
+            <input
+        </form>
+    </body>
+</html>
