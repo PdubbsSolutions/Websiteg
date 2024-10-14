@@ -1,39 +1,65 @@
 .dashboard-container {
-    display:flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 80vh;
+    text-align: center;
+    margin:0 auto;
+    padding: 50px;
+
 }
-.main-icons {
+.dashboard-text{
+    font-weight: 600;
+    font-size: 2.5em;
+    width: auto;
+    justify-content: flex-start;
+    cursor:pointer;
+    display: grid;
+}
+h1{
+    font-size: 2em;
+    font-family: Nunito, sans-serif;
+    margin-bottom: 40px;
+    color: #a8738a;
+}
+.dashboard-icons {
     display:flex;
-    justify-content: space-between;
-    width: 50%;
+    gap:20px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(1, 6fr);
+    align-items:  center;
+    text-align: center;
+    margin-top: auto;
+    
 }
 .icon{
-    width: 150px;
-    height: 150px;
+    padding: 20px;
     background-color: #e1ebe4;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.2rem;
-    font-weight: bold;
+    text-align: center;
     cursor: pointer;
     transition: all 0.3s ease;
+    border: 1px solid #e1ebe4;
+    border-radius: 10px;
+    margin: 0 auto;
+    align-items: stretch;
+    display: flex;
 }
 .icon:hover{
     background-color: #acb6af; 
-    transform:scale(1.1);
+    transform:scale(1.05);
 }
-.stacked-icons{
-    display:flex;
-    flex-direction:column;
-    justify-content: space-between;
+.icon img{
+    max-width: 100px;
+    margin-bottom: 15px;
+    margin-top: 10px;
 }
-.small-icon{
-    font-size: 0.9em;
+.icon p{
+    font-family: Nunito, sans-serif;
+    color: #d1d6bf;
+    font-size: 1.2rem;
+    scroll-margin-left: 20px;
+}
+p:hover{
+    text-decoration: underline;
+    text-decoration-color: #a8738a;
     cursor: pointer;
 }
-.small-icon:hover{
-    background-color: #acb6af;
+{
+    display:none;
 }
